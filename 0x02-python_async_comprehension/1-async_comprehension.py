@@ -14,4 +14,5 @@ async def async_comprehension() -> List[int]:
     Asynchronous comprehension that collects 10 random ints
     and returns them as a list.
     """
-    return [_ async for _ in async_generator()]
+    random_num: list = [_ async for _ in async_generator()]
+    return random_num
